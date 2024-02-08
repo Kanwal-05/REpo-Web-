@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+h1{
+    block-size: 100px;
+    font-size: 50px;
+    color: #414141;
+    text-shadow: 0 5px 10px rgba(0, 0,0,.2);
+    padding-bottom: 15px;
+    background-color: rgba(192, 185, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.container{
+    background: linear-gradient(45deg, rgb(245, 241, 241), rgb(192, 185, 192));
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.container .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0, 0,0,.2);
+    font-size: 50px;
+}
+.container .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 15px;
+
+
+}
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.668);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+
+
+}
+.container .box-container .box img{
+    height: 80px;
+
+}
+.container .box-container .box h3{
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+.container .box-container .box p{
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+    
+}
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+.container .box-container .box .btn:hover{
+    box-shadow: 0 10px 15px rgb(37, 37, 36);
+    transform: scale(1.03);
+}
+@media (max-width:768px){
+    .container{
+        padding: 20px;
+    }
+}
+.container{
+    max-width: 1170px;
+    background-color: #777;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #333;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footer-co h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-co h4::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color: #e91e63;
+   height: 2px;
+   box-sizing: border-box;
+   width:50px ;
+}
+.footer-co ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-co ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-co ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.footer-co .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+}
+.footer-co .social-links a:hover{
+    color: #23252c;
+    background-color: #ffffff;
+}
+/* search box from 165 upto 199  */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #036cdc;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  /* X RAY FORM FROM LINE 200 UPTO 239 */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  /* Style the label */
+  label {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Style the file input */
+  input[type="file"] {
+    padding: 10px;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Hover effect for the submit button */
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
